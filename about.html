@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2-3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a target="_top" href="https://flamingtext.com/"><img
+                src="https://blog.flamingtext.com/blog/2021/12/03/flamingtext_com_1638520014_1062120315.png" border="0"
+                alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a>
+        <!-- <br />Logo Design by <a href="https://flamingtext.com/">FlamingText.com</a> -->
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="card-contatiner">
+        <!-- card one -->
+        <div class="card" style="width: 20rem;">
+            <img src="data:image/png;base64,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"
+                class="card-img-top" alt="github-logo">
+            <div class="card-body">
+                <h5 class="card-title">GitHub</h5>
+                <p class="card-text">Over the span of a year and a half, I have worked on many different types of
+                    projects. You can see them on my Github Profile.</p>
+                <a href="https://github.com/carolynttnguyen" class="btn btn-primary">Check out my Repositories</a>
+            </div>
+        </div>
+        <!-- card two -->
+        <div class="card" style="width: 20rem;">
+            <img src="https://logowik.com/content/uploads/images/linkedin-new4645.jpg" class="card-img-top" alt="linkedin-logo">
+            <div class="card-body">
+                <h5 class="card-title">LinkedIn</h5>
+                <p class="card-text">If you want to get to know about more about my Professional background, my LinkedIn
+                    has a lot of insight.</p>
+                <a href="https://www.linkedin.com/in/carobytes/" class="btn btn-primary">Visit my LinkedIn</a>
+            </div>
+        </div>
+        <!-- card three -->
+        <div class="card" style="width: 20rem;">
+            <img src="data:image/png;base64,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"
+                class="card-img-top" alt="dojo-logo">
+            <div class="card-body">
+                <h5 class="card-title">Coding Dojo Alumni</h5>
+                <p class="card-text">With a Female in Code Scholarship, I graduated from Coding Dojo. It was an
+                    intensive& fast-paced coding bootcamp.</p>
+                <a href="https://www.codingdojo.com/?utm_term=coding%20dojo&utm_campaign=nationwide_branding_softdev&utm_source=adwords&utm_medium=ppc&hsa_acc=7399794314&hsa_cam=12145152239&hsa_grp=115718890926&hsa_ad=493984173106&hsa_src=g&hsa_tgt=kwd-300680237008&hsa_kw=coding%20dojo&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAiA78aNBhAlEiwA7B76pwMQrLFmvy44VsSJCLoRcTwGelLIXTQm6Bq0DbcMG1lIhzcDHeTDQxoCigsQAvD_BwE"
+                    class="btn btn-primary">Visit my LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <section id="contactinfo">
+            <p>Email: <a href="mailto:carobytes@gmail.com">Carobytes@gmail.com</a> || Last Updated: December 03, 2021
+            </p>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
